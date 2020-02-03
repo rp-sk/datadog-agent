@@ -11,7 +11,7 @@ package metrics
 // This version iterates on /{host/}proc to retrieve processes out of the namespace.
 // We return as a map[containerID]Cgroup for easy look-up.
 func ScrapeAllCgroups() (map[string]*ContainerCgroup, error) {
-	return nil
+	return map[string]*ContainerCgroup{}, nil
 }
 
 // DetectNetworkDestinations lists all the networks available
