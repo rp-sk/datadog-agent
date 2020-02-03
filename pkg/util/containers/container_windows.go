@@ -36,4 +36,5 @@ func (c *Container) FillNetworkMetrics(networks map[string]string) error {
 }
 
 func DefaultHostIPs() ([]string, error) {
+	return make([]string, 0), nil
 }
