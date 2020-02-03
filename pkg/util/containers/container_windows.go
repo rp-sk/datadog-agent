@@ -34,3 +34,6 @@ func (c *Container) FillCgroupMetrics() error {
 func (c *Container) FillNetworkMetrics(networks map[string]string) error {
 	return nil
 }
+
+func DefaultHostIPs() ([]string, error) {
+}
